@@ -10,7 +10,7 @@ function Navbar() {
 
             <nav className='bgcolor box-shadow'>
                 <div className="logo">
-                    <Link className='navbar-brand text-white bold' to="/">Flowers ecom</Link>
+                    <Link className='navbar-brand text-white bold' to="/">Ab ecom</Link>
                 </div>
                 <div className="menu-link pt-2">
                     <ul>
