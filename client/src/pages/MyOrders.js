@@ -30,7 +30,7 @@ function MyOrders() {
                                 <th scope='col'>Total Amount</th>
                                 <th scope='col'>Date</th>
                                 <th scope='col'>Payment Type</th>
-                                <th scope='col'>Transaction ID</th>
+                                {/* <th scope='col'>Transaction ID</th> */}
                                 <th scope='col'>Payment Status</th>
                                 <th scope='col'>Delivery Status</th>
                             </tr>
@@ -45,9 +45,9 @@ function MyOrders() {
                                     <td>${order.orderAmount}/-</td>
                                     <td>{order.createdAt.substring(0, 10)}</td>
                                     <td>{order.payment}</td>
-                                    <td>{order.paymentResult.id}</td>
-                                    <td>{order.isPaid ? (<li>Payment Done</li>) : (<li>Order Placed</li>)}</td>
-                                    <td>{order.isDelivered ? (<li>Delivered</li>) : (<li>Order Placed</li>)}</td>
+                                    {/* <td>{order.paymentResult.id}</td> */}
+                                    <td>{order.isPaid ? (<li className='bg-success rounded text-white'>Payment Done</li>) : (<li className='bg-warning rounded'>Order Placed</li>)}</td>
+                                    <td>{order.isDelivered ? (<li className='bg-success rounded text-white'>Delivered</li>) : (<li className='bg-warning rounded'>Not delivered</li>)}</td>
                                 </tr>
                             }))}
                         </tbody>
